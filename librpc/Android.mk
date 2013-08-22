@@ -10,6 +10,7 @@ LOCAL_CFLAGS:= -fno-short-enums
 
 LOCAL_CFLAGS+=-DRPC_OFFSET=0
 #LOCAL_CFLAGS+=-DDEBUG -DVERBOSE
+LOCAL_CFLAGS += -fno-strict-aliasing -Wno-error=strict-aliasing 
 
 LOCAL_COPY_HEADERS_TO:= librpc/rpc
 LOCAL_COPY_HEADERS:= \
